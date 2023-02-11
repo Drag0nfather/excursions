@@ -1,0 +1,14 @@
+<!-- excursions/templates/excursions/excursion_list.html -->
+
+<h1>Excursions in Pattaya</h1>
+
+<ul>
+{% for excursion in excursions %}
+  <li>
+    <h2>{{ excursion.name }}</h2>
+    <p>{{ excursion.description }}</p>
+    <p>Price: {{ excursion.price }}</p>
+    <image>{{excursion.image}}</image>
+  </li>
+{% endfor %}
+</ul>
